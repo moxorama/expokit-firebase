@@ -10,3 +10,5 @@ web-build/
 web-report/
 .gradle/
 build/
+node_modules
+pods/

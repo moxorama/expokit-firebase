@@ -1,7 +1,14 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
+pod 'Firebase/Core','6.3.0'
+pod 'GoogleIDFASupport', '~> 3.14.0'
+
+
 target 'expokit-firebase' do
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
+
+
   pod 'ExpoKit',
     :git => "http://github.com/expo/expo.git",
     :tag => "ios/2.11.2",
@@ -19,6 +26,8 @@ target 'expokit-firebase' do
       'expo-payments-stripe',
     ],
   )
+
+
 
   pod 'React',
     :path => "../node_modules/react-native",
@@ -50,11 +59,17 @@ target 'expokit-firebase' do
   pod 'glog',
     :podspec => "../node_modules/react-native/third-party-podspecs/glog.podspec",
     :inhibit_warnings => true
+  
 
 
   post_install do |installer|
     installer.pods_project.main_group.tab_width = '2';
     installer.pods_project.main_group.indent_width = '2';
+
+    rnfirebase = installer.pods_project.targets.find { |target| target.name == 'RNFirebase' }
+    rnfirebase.build_configurations.each do |config|
+      config.build_settings['HEADER_SEARCH_PATHS'] = '$(inherited) ${PODS_ROOT}/Headers/Public/**'
+    end
 
     installer.target_installation_results.pod_target_installation_results
       .each do |pod_name, target_installation_result|
