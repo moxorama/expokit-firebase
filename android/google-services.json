@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1007495609236",
+    "firebase_url": "https://expokit-firebase.firebaseio.com",
+    "project_id": "expokit-firebase",
+    "storage_bucket": "expokit-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007495609236:android:9746b01b517bf6ff",
+        "android_client_info": {
+          "package_name": "pro.wizeman.exfb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007495609236-gt9qs8keqpappdl6qmiq883i2082loo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJiUvmbU3dySAxkYbJNm3F1mzrQglZm8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007495609236-gt9qs8keqpappdl6qmiq883i2082loo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

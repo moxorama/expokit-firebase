@@ -11,6 +11,9 @@ import expo.loaders.provider.interfaces.AppLoaderPackagesProviderInterface;
 import host.exp.exponent.generated.BasePackageList;
 import okhttp3.OkHttpClient;
 
+import io.invertase.firebase.RNFirebasePackage;
+import io.invertase.firebase.analytics.RNFirebaseAnalyticsPackage; // <-- Add this line
+
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
 
@@ -26,6 +29,8 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
     return Arrays.<ReactPackage>asList(
         // Add your own packages here!
         // TODO: add native modules!
+        new RNFirebasePackage(),
+        new RNFirebaseAnalyticsPackage() // <-- Add this line
 
         // Needed for `react-native link`
         // new MainReactPackage()
