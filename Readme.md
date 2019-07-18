@@ -7,6 +7,8 @@ specify exactly the same versions as ExpoKit uses to avoid 'jar hell'.
 
 All library versions are crafted and I sharing result for everyone.
 
+**I didn't execute `react-native link react-native-firebase`***
+
 **package.json**
 "react-native-firebase": "5.4.0"
 
