@@ -5,7 +5,7 @@
 The main problem is that ExpoKit contains firebase libraries, and you should
 specify exactly the same versions as ExpoKit uses to avoid 'jar hell'.
 
-All library versions are crafted and I sharing this result of this  for everyone.
+All library versions are crafted and I sharing result for everyone.
 
 **package.json**
 "react-native-firebase": "5.4.0"
